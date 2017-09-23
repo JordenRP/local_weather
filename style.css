@@ -1,0 +1,238 @@
+body, html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+.backg {
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.back_clear {
+  background-image: url(http://i91.fastpic.ru/big/2017/0923/7d/0726211bd16f25a619a4587c02026d7d.jpg)
+}
+
+.back_cloud {
+  background-image: url(http://i95.fastpic.ru/big/2017/0923/f0/cc5d29e79749829bc7d60fc59eae73f0.png);
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  top: 10px;
+  left: 0;
+  position: absolute;
+  margin-left: 200px;
+  margin-right: 200px;
+  right: 0;
+  z-index: 2;
+  padding: 0 10px;
+  width: 946px;
+}
+
+.wrapp {
+  position: relative;
+  bottom: 200px;
+  left: 11px;
+}
+
+.float {
+  float: left;
+  margin-right: 30px;
+}
+
+
+table {
+  font-family: 'Love Ya Like A Sister', cursive;
+  background-color: rgba(34, 34, 35, 0.3);
+  border-radius: 10px;
+  color: rgb(237, 234, 234);
+  font-size: 50px;
+  border-collapse: collapse;
+  margin-right: 20px;
+  float: right;
+  margin-top: 72px;
+}
+
+td:nth-child(2n) {
+  text-align: right;
+}
+
+
+tr {
+  border-bottom: 2px solid rgb(237, 234, 234);
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+.main_weather {
+  text-transform: uppercase;
+  color: rgb(237, 234, 234);
+  font-size: 40px;
+  margin-left: 60px; 
+  margin-top: 65px;
+}
+
+.rays {
+  position: absolute;
+  animation: lights 6s ease-in-out infinite;
+}
+
+@keyframes lights{
+  0% {opacity: 0.2} 
+  20% {opacity: 1} 
+  100% {opacity: 1} 
+}
+
+.sun {
+  position: relative;
+  right: 73px;
+}
+
+.pos {
+  margin-left: 25px;
+}
+
+.temperature {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-size: 100px;
+  text-align: center;
+}
+
+@keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0px 600px /* анимируем свойство background-position */
+    }
+}
+/* Mozilla Firefox 5.0+ */
+@-moz-keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px
+    }
+}
+/* Safari 4.0+, Chrome 4.0+ */
+@-webkit-keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px
+    }
+}
+/* Opera 12.0+ */
+@-o-keyframes animatedBackground {
+    0 {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -600px 600px
+    }
+}
+
+
+.forward {
+  position: absolute;
+  z-index: 3;
+  top: 251px;
+  height: 200px; 
+	width:228px;
+	animation: animatedBackground 70s linear infinite;
+	-moz-animation: animatedBackground 70s linear infinite;
+	-webkit-animation: animatedBackground 70s linear infinite;
+ 	-o-animation: animatedBackground 70s linear infinite;
+}
+
+.back{
+	height: 200px; 
+	width:228px;
+	animation: animatedBackground 40s linear infinite;
+	-moz-animation: animatedBackground 40s linear infinite;
+	-webkit-animation: animatedBackground 40s linear infinite;
+ 	-o-animation: animatedBackground 40s linear infinite;
+}
+
+.forward_driz {
+  	background-image: url('http://i89.fastpic.ru/big/2017/0921/94/0a518937ffe39804093b7e894c61b094.png');
+}
+
+
+
+.back_rain {
+  background-image: url('http://i89.fastpic.ru/big/2017/0921/53/8fea4a87a0b253b80d8cc7ecf1b61c53.png');  
+}
+
+
+.forward_rain {
+	background-image: url('http://i89.fastpic.ru/big/2017/0921/94/0a518937ffe39804093b7e894c61b094.png');
+}
+
+.back_driz {
+  height: 200px;
+}
+
+.back_snow{
+	background-image: url('http://i89.fastpic.ru/big/2017/0922/39/2eb1aa9f06c8e2c496916f24909dfa39.png');
+}
+.forward_snow {
+	background-image: url('http://i92.fastpic.ru/big/2017/0920/98/d9fa5627fd45b55afb10f8087bf96698.png');
+}
+
+.back_thunder{
+	background-image: url('http://i89.fastpic.ru/big/2017/0921/53/8fea4a87a0b253b80d8cc7ecf1b61c53.png');
+}
+.forward_thunder {
+  position: absolute;
+  z-index: 3;
+  top: 251px;
+  height: 200px; 
+	width:228px;
+	background-image: url('http://i89.fastpic.ru/big/2017/0921/94/0a518937ffe39804093b7e894c61b094.png');
+	animation: animatedBackground 70s linear infinite;
+	-moz-animation: animatedBackground 70s linear infinite;
+	-webkit-animation: animatedBackground 70s linear infinite;
+ 	-o-animation: animatedBackground 70s linear infinite;
+}
+
+.pos_sun {
+    position: absolute;
+    margin-left: 25px;
+    bottom: 118px;
+}
+
+#canvas {
+  position: absolute;
+}
+
+.fix {
+  position: relative;
+  bottom: 230px;
+  left: 120px;
+  z-index: 0;
+}
+
+#tempUnit {
+  color: #1a2266;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 42px;
+}
+
